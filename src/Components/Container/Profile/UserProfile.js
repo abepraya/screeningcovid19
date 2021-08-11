@@ -99,18 +99,14 @@ const triggerFileSelect = () => inputRef.current.click();
         history.push(path);
     }
 
-    console.log("Check Data Screening: "+ JSON.stringify(dataScreening))
-
     async function submitHandler(event){
         try{
             event.preventDefault();
             setIsLoading(true);
             let file = userAvatar;
-            console.log(file);
             let token = authCtx.token;
             const formBodyData = new FormData();
             formBodyData.append('upload-file',file);
-            console.log(formBodyData);
             const response = await axios.post("/account/upload-file/avatar",formBodyData,{
                 headers:{
                     Authorization: `Bearer ${token}`,
@@ -130,7 +126,7 @@ const triggerFileSelect = () => inputRef.current.click();
             }
             setUserAvatar('');
         }catch(error){
-            console.log("CATCH ERROR: " + error);
+            alert("CATCH ERROR: " + error);
         }
     }
 
@@ -144,8 +140,6 @@ const triggerFileSelect = () => inputRef.current.click();
                 'Authorization':`Bearer ${token}`,
               }
             }).then(response => {
-              console.log("DATA: " + JSON.stringify(response.data.data));
-              console.log("STATUS: " + response.status);
               if(response.status === 200 || response.statusText === "OK"){
                 setIsLoading(false);
                 setUserData(response.data.data);
@@ -156,7 +150,7 @@ const triggerFileSelect = () => inputRef.current.click();
             })
             .catch(error => {  
                 setIsLoading(false);
-                console.log("useEffect Error: ",error.message);
+                alert("useEffect Error: ",error.message);
             })
             
             await axios.interceptors.response.use(response => {
@@ -164,7 +158,7 @@ const triggerFileSelect = () => inputRef.current.click();
               return response;
             }, error => {
               if (error.response.status === 401) {
-                console.log(error.response);
+                alert(error.response);
               }    
               return error;
             });
@@ -180,7 +174,6 @@ const triggerFileSelect = () => inputRef.current.click();
         
     }, [])
 
-    console.log("EEH"+ profilePicture)
     Moment.locale("en");
 
     return (

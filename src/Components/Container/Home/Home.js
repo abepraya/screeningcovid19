@@ -157,8 +157,6 @@ const Home = ({ screeningData }) => {
         },
       })
       .then((response) => {
-        console.log("DATA: " + JSON.stringify(response.data.data));
-        console.log("STATUS: " + response.status);
         if (response.status === 200 || response.statusText === "OK") {
           setIsLoading(false);
           setUserData(response.data.data);
@@ -169,7 +167,7 @@ const Home = ({ screeningData }) => {
       })
       .catch((error) => {
         setIsLoading(false);
-        console.log("useEffect Error: ", error.message);
+        alert(error.message);
       });
 
     await axios.interceptors.response.use(
@@ -178,7 +176,7 @@ const Home = ({ screeningData }) => {
       },
       (error) => {
         if (error.response.status === 401) {
-          console.log(error.response);
+          alert(error.response);
         }
         return error;
       }

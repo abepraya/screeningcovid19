@@ -104,18 +104,15 @@ const Map = (props) => {
             })
         } else {
             setIsLoading(false);
-            console.log("ERROR MAP: " + response);
             throw new Error("Can't Found ! Detail: " + response);
         }
         }catch(error){
             setIsLoading(false);
-            console.log(error);
             alert("CATCH: " + error.message);
         }
     }
 
     function modeChangeHandler(e){
-        console.log(e.target.value);
         setDestination({
             mode: e.target.value
         });
@@ -138,14 +135,10 @@ const Map = (props) => {
     }
 
     const pageCount = destination.instructions? Math.ceil(destination.instructions.length / pageSize) : 0;
-    console.log("PAGE COUNT: " + pageCount);
     const pages = _.range(1, pageCount + 1);
-    console.log("PAGES: " + pages);
 
     let totalTime = "Total Time: "+ secondsToTime(destination.totalTime);
     let totalDistance = "Total Distance: " + formatDistance(destination.totalDistance);
-
-    console.log("PaginatedPOST : " + JSON.stringify(paginatedPost));
 
     return(
         <Container>

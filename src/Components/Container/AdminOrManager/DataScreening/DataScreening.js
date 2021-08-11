@@ -63,7 +63,6 @@ const DataScreening = (props) => {
       const response = await axios.put(`/screening/update-screening/${userId}`,bodyData, config);
       if(response.status === 200 || response.status === 202){
         setIsLoading(false)
-        console.log("GOOD JOB", response)
         setAcceptModal(false);
         window.location.reload();
       }else{
@@ -90,7 +89,6 @@ const DataScreening = (props) => {
 
       const response = await axios.put(`/screening/update-screening/${userId}`,bodyData, config);
       if(response.status === 200 || response.status === 202){
-        console.log("GOOD JOB", response)
         setRejectModal(false);
         window.location.reload();
       }else{
@@ -115,7 +113,6 @@ const DataScreening = (props) => {
 
       if(response.status === 202 || response.status === 200){
         setIsLoading(false);
-        console.log("RESP LIST DATA SCREENING: " + JSON.stringify(response.data.data));
         setListScreeningUser(response.data.data);
       }
       else{
@@ -138,7 +135,6 @@ const DataScreening = (props) => {
       }
       const response = await axios.get(`/screening/get-screening/${screenerID}`, config);
       if(response.status === 202 || response.status === 200){
-        console.log("Masuk Gan")
         setDataScreeningDetail(response.data.data.detail_screening.file_url);
       }else{
         throw new Error(response)
@@ -151,8 +147,6 @@ const DataScreening = (props) => {
   useEffect(() => {
     getListDataScreening()
   }, [])
-
-  console.log("data screening detail: " + dataScreeningDetail)
 
   return (
     <section className="data-screening">

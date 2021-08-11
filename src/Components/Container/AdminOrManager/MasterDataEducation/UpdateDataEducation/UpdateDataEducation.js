@@ -30,7 +30,6 @@ const UpdateDataEducation = (props) => {
       const response = await axios.get(`/education/get-education/${id}`, config);
       if(response.status === 200 || response.status === 202){
         setIsLoading(false)
-        console.log("masuk gaan", JSON.stringify(response.data))
         setDataEducation({
           title: await response.data.data.data.title,
           description: await response.data.data.data.content,
@@ -95,9 +94,6 @@ const UpdateDataEducation = (props) => {
       getDataEdu();
     }, [])
 
-    console.log(dataEducation)
-
-    console.log("ID UPDATE LAST WORLD: " + id);
     return (
         <header className="new-data-education">
             <form className="Form">

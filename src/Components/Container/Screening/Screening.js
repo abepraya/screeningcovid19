@@ -35,7 +35,6 @@ function Screening({ match }) {
             // let file = selectedFile;
             const formBodyData = new FormData();
             formBodyData.append('upload-file', file);
-            console.log("FormBodyData Scan: " + formBodyData);
             const token = authCtx.token;
             const headers = {
                 'Authorization': `Bearer ${token}`
@@ -59,7 +58,6 @@ function Screening({ match }) {
         try{
             // uploadHandler(event)
             setIsLoading(true);
-            console.log("check selected file: " + selectedFile)
             let token = `Bearer ${authCtx.token}`;
             const bodyData = {
                 "file_upload_id": `${selectedFile}`
@@ -103,7 +101,6 @@ function Screening({ match }) {
           return value;
         };
       };
-    console.log("Selected File: " + JSON.stringify(selectedFile, getCircularReplacer()));
 
     return (
         <header className="Screenings">

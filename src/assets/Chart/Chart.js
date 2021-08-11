@@ -6,9 +6,6 @@ import { Bar } from 'react-chartjs-2';
 const Chart = ({labels, titles1, titles2, titles3, datas1, datas2, datas3}) => {
   const [chartData, setChartData] = useState({});
 
-  console.log("Datas 2: ", datas2);
-  console.log("Datas 3: ", datas3); 
-  console.log("Labels : ", labels);
     const ChartGraph = () => {
         try{
             setChartData({

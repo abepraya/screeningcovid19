@@ -31,7 +31,6 @@ const Dashboard = (props) => {
       const response = await axios.get("/account/get-employee/profile", config);
       if(response.status === 202 || response.status === 200){
         setIsLoading(false);
-        console.log("DATA ADMIN: "+ JSON.stringify(response.data));
         setDataAdmin(response.data.data.name);
       }else{
         setIsLoading(false);
@@ -103,8 +102,6 @@ const Dashboard = (props) => {
   let recovered = dataCase[1];
   let deaths = dataCase[2];
 
-
-  console.log("Visitor Case: " + JSON.stringify(visitorCase))
   return (
     <>
     <main className="main">

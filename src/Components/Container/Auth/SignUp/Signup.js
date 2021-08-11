@@ -29,7 +29,6 @@ const Signup = (props) => {
                 setIsLoading(true);
                 event.preventDefault();
                 const register = new Register(nik, fName,lName, gender, dob, email, password, phoneNumber, address);
-                console.log(register);
         
                 const bodyFormData = new FormData();
                 bodyFormData.append('nik',nik);
@@ -41,11 +40,9 @@ const Signup = (props) => {
                 bodyFormData.append('address',address);
                 bodyFormData.append('email',email);
                 bodyFormData.append('password',password);
-                console.log(bodyFormData);
                 clearField();
     
                 await axios.post("/auth/registration",bodyFormData).then(response => {
-                    console.log(response);
                     if(response.status === 202){
                         setIsLoading(false);
                         history.replace('/sign-in');

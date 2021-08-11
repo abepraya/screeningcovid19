@@ -45,7 +45,6 @@ const Education = (props) => {
     getEducationDataList();
   }, [])
 
-  console.log("EDU LIST: " + JSON.stringify(dataEduList))
   Moment.locale("en");
   return (
     <div>

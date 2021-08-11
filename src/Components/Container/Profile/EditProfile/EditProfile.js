@@ -49,7 +49,6 @@ const EditProfile = (props) => {
 
         let firstName = content.full_name.split(" ").slice(0, -1).join(" ");
         let lastName = content.full_name.split(" ").slice(-1).join(" ");
-        console.log("DATA EDIT: " + JSON.stringify(content));
         setUserData({
           ...userData,
           nik: content.nik_number,
@@ -86,9 +85,9 @@ const EditProfile = (props) => {
         bodyFormData.append("address", userData.address);
         bodyFormData.append("email", userData.email);
         bodyFormData.append("password", userData.password);
-        for (var pair of bodyFormData.entries()) {
-          console.log(pair[0] + " - " + pair[1]);
-        }
+        // for (var pair of bodyFormData.entries()) {
+        //   (pair[0] + " - " + pair[1]);
+        // }
 
         const token = authCtx.token;
         const headers = {
@@ -100,7 +99,6 @@ const EditProfile = (props) => {
           { headers }
         );
         if (response.status === 200 || response.status === 202) {
-          console.log("BERHASIL !!" + response.data);
           setIsLoading(false);
           let path = `/profile`;
           history.push(path);

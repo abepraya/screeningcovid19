@@ -34,10 +34,8 @@ function SignupAdmin() {
                 bodyFormData.append('Password',password);
                 bodyFormData.append('Role',role);
                 bodyFormData.append('ShifttimeId',shiftTime);
-                console.log(bodyFormData);
                 
                 await axios.post("/employee/auth/registration",bodyFormData).then(response => {
-                    console.log(response);
                     if(response.status === 202){
                         setIsLoading(false);
                         clearField();

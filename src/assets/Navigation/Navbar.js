@@ -36,10 +36,10 @@ export const Navbar = (props) => {
           }
         
           await axios.interceptors.response.use(response => {
-            console.log("Interceptor1: " + JSON.stringify(response))
+            alert("Interceptor1: " + JSON.stringify(response))
             return response;
          }, error => {
-            console.log("Interceptor2: " + error)
+            alert("Interceptor2: " + error)
            return error;
          });
         }catch(error){

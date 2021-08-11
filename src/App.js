@@ -41,14 +41,14 @@ function App() {
     // useEffect(() => {
     //   async function getProfile(){
     //     await axios.get('/account/get-user/profile').then(response => {
-    //       console.log("DATA: " + JSON.stringify(response.data.data));
-    //       console.log("STATUS: " + response.status);
+    //       ("DATA: " + JSON.stringify(response.data.data));
+    //       ("STATUS: " + response.status);
     //       if(response.status === 200 || response.statusText === "OK"){
     //         setUserData(response.data.data);
     //       }
     //     })
     //     .catch(error => {    
-    //       console.log("useEffect Error: ",error.message);
+    //       ("useEffect Error: ",error.message);
     //     })
         
     //     await axios.interceptors.response.use(response => {
@@ -56,7 +56,7 @@ function App() {
     //       return response;
     //     }, error => {
     //       if (error.response.status === 401) {
-    //         console.log(error.response);
+    //         (error.response);
     //       }    
     //       return error;
     //     });

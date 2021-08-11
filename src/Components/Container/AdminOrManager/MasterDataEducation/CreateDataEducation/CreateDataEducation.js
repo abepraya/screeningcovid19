@@ -38,7 +38,6 @@ const CreateDataEducation = (props) => {
           const response = await axios.post('/education/add-education',bodyData , config);
           
           if(response.status === 202 || response.status === 200){
-            console.log(JSON.stringify(response.data.data));
             history.push('/master-data-education')
           }
           else{
@@ -65,7 +64,6 @@ const CreateDataEducation = (props) => {
         const response = await axios.post("/account/upload-file/education", formBodyData, config);
         if(response.status === 200 || response.status === 202){
           setIsLoading(false)
-          console.log("MASUK PICT GAN", response.data.data.file_id)
           setPicture(response.data.data.file_id)
         }else{
           setIsLoading(false)
@@ -75,8 +73,6 @@ const CreateDataEducation = (props) => {
         alert(err.message)
       }
     }
-
-    console.log("PICT DATA: " + picture)
 
     return (
         <header className="new-data-education">

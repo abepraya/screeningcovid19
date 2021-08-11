@@ -23,7 +23,6 @@ const AdminNavbar = (props) => {
         }
         const response = await axios.put('/account/logout-account', null, config);
         if(response.status === 200 || response.status === 202){
-            console.log("Success");
             authCtx.logoutAdmin();
             history.replace('/admin-login');
 

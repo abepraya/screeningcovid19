@@ -26,7 +26,6 @@ const MasterDataEducation = (props) => {
 
       const response = await axios.get('/education/get-education',config);
       if(response.status === 202 || response.status === 200){
-        console.log("GET LIST EDUCATION: "+ JSON.stringify(response.data.data));
         setEducationList(response.data.data.list);
       }else{
         throw new Error(response);
@@ -44,7 +43,6 @@ const MasterDataEducation = (props) => {
           Authorization: token
         }
       }
-      console.log("EDU ID: " + eduID)
       const response = await axios.delete(`/education/delete-education/${eduID}`, config);
       if(window.confirm("Are you sure to delete this content?")){
         if(response.status === 202 || response.status === 200){

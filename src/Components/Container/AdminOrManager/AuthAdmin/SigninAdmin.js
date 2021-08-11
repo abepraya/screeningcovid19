@@ -27,20 +27,14 @@ function SigninAdmin() {
       event.preventDefault();
       setIsLoading(true);
       const bodyReq = new SigningIn(email, password);
-      console.log(bodyReq);
 
       await axios
         .post("/employee/auth/login", bodyReq)
         .then((response) => {
-          console.log("HERE: " + JSON.stringify(response));
           if (email === "" && password === "") {
             setIsLoading(false);
             setErrorMessage("Please Input Email and Password");
-          } else if (response.status === 202) {
-            console.log(
-              "Sukses LOGIN TOKEN: ",
-              response.data.data.access_token
-            );
+          } else if (response.status === 202) {      
             localStorage.setItem('rememberMe', rememberMe);
             localStorage.setItem('user', rememberMe? email : '');
             localStorage.setItem('pass', rememberMe? password : '');
@@ -55,7 +49,6 @@ function SigninAdmin() {
           }
         })
         .catch((error) => {
-          console.log("CATCH ERR: " + error);
           if (
             error.response.data.meta.message ===
             "Password atau email/nomor hp tidak benar"
@@ -71,7 +64,6 @@ function SigninAdmin() {
       setIsLoading(false);
       clearField();
     } catch (error) {
-      console.log("TEST ERROR: ", error.message);
       setIsLoading(false);
     }
   }

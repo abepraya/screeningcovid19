@@ -30,10 +30,10 @@ function SymptomsForm(props) {
         const response = await axios.get("/get-data/get-symptom");
         let content;
         if (response.status === 202) {
-          // console.log("MASUK");
+          // ("MASUK");
           setIsLoading(false);
           content = await response.data.data.symptom_data;
-          // console.log("Content" + content);
+          // ("Content" + content);
           setdataSymptoms(content);
         } else {
           setIsLoading(false);
@@ -76,16 +76,6 @@ function SymptomsForm(props) {
         event.preventDefault();
         setIsLoading(true);
 
-        // const formBodyData = new FormData();
-        // formBodyData.append("file_upload_id", selectedFile.id);
-        // formBodyData.append("detail_symptom", checked);
-        // console.log("Form Symptom: " + selectedFile.id);
-        // for (var pair of formBodyData.entries()) {
-        //   console.log("DATA BODY: ", pair[1]);
-        // }
-        console.log("CheckL :" + checked);
-        console.log("FileL :" + selectedFile.id);
-
         const bodyRequest = {
           "file_upload_id": `${selectedFile.id}`,
           "detail_symptom": `${checked}`
@@ -100,7 +90,7 @@ function SymptomsForm(props) {
 
         const response = await axios.post("/account/symptom-user", bodyRequest, config);
         if (response.status === 200 || response.status === 202) {
-          console.log(JSON.stringify(response));
+          (JSON.stringify(response));
           setIsLoading(false);
           alert("Success !");
           // setChecked("");
@@ -127,7 +117,6 @@ function SymptomsForm(props) {
       };
       const response = await axios.post("/account/upload-file/covid-screener", formBodyData, {headers});
       if (response.status === 202 || response.status === 200) {
-        console.log("Upload Swab File: "+ JSON.stringify(response.data.data.file_id));
         setIsLoading(false);
         setSelectedFile({
           ...selectedFile,
@@ -144,8 +133,8 @@ function SymptomsForm(props) {
   }
 
 
-  // console.log("CHECKING: " + checked);
-  // console.log("symptoms: ", dataSymptoms);
+  // ("CHECKING: " + checked);
+  // ("symptoms: ", dataSymptoms);
 
   return (
     <div>
