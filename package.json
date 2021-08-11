@@ -55,5 +55,8 @@
   "devDependencies": {
     "@types/leaflet": "^1.7.4",
     "http-proxy-middleware": "^2.0.1"
+  },
+  "client":{
+    "proxy": "https://screener-backend.herokuapp.com/api"
   }
 }
