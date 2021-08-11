@@ -1,0 +1,87 @@
+[
+    {
+        "id":1,
+        "title":"Demam",
+        "image":""
+    },
+    {
+        "id":2,
+        "title":"Batuk",
+        "image":""
+    },
+    {
+        "id":3,
+        "title":"Mudah Lelah",
+        "image":""
+    },
+    {
+        "id":4,
+        "title":"Penurunan Nafsu Makan",
+        "image":""
+    },
+    {
+        "id":5,
+        "title":"Napas Pendek",
+        "image":""
+    },
+    {
+        "id":6,
+        "title":"Sakit Kepala",
+        "image":""
+    },
+    {
+        "id":7,
+        "title":"Kehilangan Indra Pengecapan/ageusia",
+        "image":""
+    },
+    {
+        "id":8,
+        "title":"Nyeri Otot dan Nyeri Tulang",
+        "image":""
+    },
+    {
+        "id":9,
+        "title":"Nyeri Tenggorokan",
+        "image":""
+    },
+    {
+        "id":10,
+        "title":"Pilek dan Bersin",
+        "image":""
+    },
+    {
+        "id":11,
+        "title":"Mual, Muntah, Nyeri Perut",
+        "image":""
+    },
+    {
+        "id":12,
+        "title":"Diare",
+        "image":""
+    },
+    {
+        "id":13,
+        "title":"Radang / Iritasi Mata (Konjungtivitis)",
+        "image":""
+    },
+    {
+        "id":14,
+        "title":"Kemerahan Pada Kulit / Perubahan Warna Pada Jari - Jari Kaki",
+        "image":""
+    },
+    {
+        "id":15,
+        "title":"Sesak Napas Tanpa Distres Pernapasan",
+        "image":""
+    },
+    {
+        "id":16,
+        "title":"Frekuensi Napas > 30x/Menit",
+        "image":""
+    },
+    {
+        "id":17,
+        "title":"Saturasi <= 95%",
+        "image":""
+    }
+]

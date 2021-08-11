@@ -1,0 +1,44 @@
+.symptom-form-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 25vh;
+}
+
+.Screenings .btn-step {
+    position: absolute;
+    margin-top: -44rem;
+    border-radius: 60px;
+    height: 90px;
+}
+
+.btn-step i {
+    margin-right: 5px;
+}
+
+
+#input[type="file"] {
+    display: none;
+}
+
+.symptom-form-container h3{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.symptom-form-container button{
+    margin-top: 35px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.list-choice{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 12px;
+    height: 405px;
+    column-count: 2;
+    overflow-x: auto;
+}

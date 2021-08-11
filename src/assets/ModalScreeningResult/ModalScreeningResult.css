@@ -1,0 +1,91 @@
+.modalScreeningResult-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1110 !important;
+  overflow: hidden;
+}
+
+.modalScreeningResult-container {
+  color: black;
+  width: 500px;
+  height: 430px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  z-index: 1040 !important;
+  overflow: hidden;
+}
+
+.modalScreeningResult-container .title {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.modalScreeningResult-container .body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+}
+
+.modalScreeningResult-container .footer ul {
+  line-height: 1;
+  margin-left: -20px;
+  font-weight: 18px; 
+  list-style-position: inside;
+}
+
+.detail {
+    margin-top: 15px;
+    width: 80%;
+    height: 80%;
+}
+
+.modalScreeningResult-container .footer ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.modalScreeningResult-container .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalScreeningResult-container .footer button {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 24px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.title-close-button button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  margin-left: 425px;
+  cursor: pointer;
+}
+
+#cancel-button {
+  background-color: crimson;
+}

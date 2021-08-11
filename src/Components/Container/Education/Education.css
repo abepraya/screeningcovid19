@@ -1,0 +1,43 @@
+.news {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.news .news-container {
+  width: 1200px;
+  margin-top: 6rem;
+  overflow-x: auto;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.education .education-container {
+  width: 1200px;
+  margin-top: 6rem;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-container h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.faq .faq-container {
+  width: 1200px;
+  margin-top: 6rem;
+}

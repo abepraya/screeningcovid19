@@ -1,0 +1,122 @@
+section {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+}
+
+section:nth-child(even) {
+  background-color: #1c8ef9;
+}
+
+.header {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header h3 {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  font-size: 6rem;
+  /* margin-left: 8rem; */
+}
+
+.datacase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.datacase h2 {
+  color: #fff;
+}
+
+.datacase .datacase-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  justify-content: space-around;
+}
+
+.globalcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.globalcase .globalcase-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  justify-content: space-around;
+}
+
+.globalcase .chart-img {
+  width: 55vw;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.history-qrCode {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.history-qrCode .history-qrCode-container {
+  background-color: #fff;
+  color: black;
+  width: 1200px;
+  height: 18.5vh;
+  display: flex;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.history-qrCode .history-qrCode-img {
+  width: 35%;
+  padding-top: 23px;
+  padding-left: 25px;
+  column-count: 2;
+  margin-left: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.history-qrCode .qrcodes-screening{
+  cursor: pointer;
+}
+
+.history-qrCode .history-qrCode-description {
+  width: 80%;
+  padding-left: 2rem;
+  padding-top: 12px;
+}
+
+.history-qrCode-container h5 {
+  text-align: center;
+  margin-top: 45px;
+  margin-left: 32rem;
+  width: 120px;
+}

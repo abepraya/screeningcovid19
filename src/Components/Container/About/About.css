@@ -1,0 +1,93 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* .about h2 {
+    color: #fff;
+} */
+
+.vision-mission {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;   
+}
+
+.vision-container {
+    width: 1200px;
+    display: flex;
+    margin-top: 4rem;
+}
+
+.vision-img {
+    min-width:200px;
+    height: 165px;
+    background-image: url("../../../assets/Img/VisionMission/vision.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.vision-description {
+    padding-left: 2rem;
+}
+
+.mission-container {
+    width: 1200px;
+    display: flex;
+    margin-top: 4rem;
+}
+
+.mission-img {
+    /* min-width: 550px; */
+    min-width: 200px;
+    background-image: url("../../../assets/Img/VisionMission/mission.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mission-description {
+    padding-left: 2rem;
+}
+
+.about h3 {
+    /* color: #fff; */
+    /* margin-left: 85px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.list-item{
+    text-align: left;
+    list-style-type: square;
+}
+
+.about .about-container {
+  display: flex;
+  width: 1200px;
+  margin-top: 4rem;
+}
+
+.about .about-map{
+    min-width: 550px;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-contact {
+    position: relative;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: -44vw;
+}
+
+.about-contact i{
+    margin-right: 15px;
+}

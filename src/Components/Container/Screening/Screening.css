@@ -1,0 +1,63 @@
+.Screenings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 2rem;
+}
+
+.Screenings h1 {
+    position: absolute;
+    top: 20vh;
+}
+
+.Screenings .screening-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin-top: -10rem;
+  justify-content: space-evenly;
+}
+
+.Screenings .screening {
+  background-color: #fff;
+  top: 35vh;
+  max-width: 300px;
+  max-height: 350px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s ease;
+  text-align: center;
+}
+
+.Screenings .screening:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: 0.5s ease;
+  background-color: #555;
+  color: #fff;
+}
+
+.screening img {
+  width: 125px;
+  margin-left: 10px;
+  margin-top: 12px;
+}
+
+.screening .img-second {
+    margin-left: 45px;
+}
+
+/* .screening-container .first{
+    margin-left: -30rem;
+}  */
+
+/* .screening-container .second{
+    margin-left: 30rem;
+} */

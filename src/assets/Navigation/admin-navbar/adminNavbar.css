@@ -1,0 +1,15 @@
+.w3-sidebar {
+    width: 17%;
+    height: 110vh;
+}
+
+.w3-sidebar ul li{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}

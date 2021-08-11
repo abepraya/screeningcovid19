@@ -1,0 +1,20 @@
+.content-container {
+    justify-content: space-around;
+}
+
+.content-container .content-description {
+    display: flex;
+}
+
+.content-description p {
+    margin-right: 28px;
+}
+
+.content-description i {
+    margin-right: 5px;
+}
+
+.content-container img{
+    max-height: 320px;
+    max-width: 320px;
+}

@@ -1,0 +1,18 @@
+.new-data-education {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    height: 75vh;
+    margin-left: 35%;
+}
+
+.new-data-education .multiple-button {
+    position: relative;
+    right: 7vw;
+}
+
+
+

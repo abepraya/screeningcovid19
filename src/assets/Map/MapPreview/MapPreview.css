@@ -1,0 +1,9 @@
+.leaflet-container{
+    min-width: 36.2vw;
+    height: 36vh;
+    display: flex;
+    margin-top: -5.5rem;
+    z-index: 0;
+    border-radius: 10px;
+    box-shadow: rgba(74, 126, 185, 0.3) 0px 0px 0px 3px;
+}

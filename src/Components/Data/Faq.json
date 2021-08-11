@@ -1,0 +1,30 @@
+[
+    {
+        "question":"Apakah Coronavirus dan COVID-19?",
+        "answers":"Coronavirus Disease 2019 atau Covid-19 adalah penyakit baru yang dapat menyebabkan gangguan pernapasan dan radang paru. Penyakit ini disebabkan oleh infeksi Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2). Gejala klinis yang muncul beragam, mulai dari seperti gejala flu biasa (batuk, pilek, nyeri tenggorok, nyeri otot, nyeri kepala) sampai yang berkomplikasi berat (pneumonia atau sepsis) atau bahkan tidak bergejala sama sekali."
+    },
+    {
+        "question":"Seberapa bahaya COVID-19 ini?",
+        "answers":"Seperti penyakit pernapasan lainnya, COVID-19 dapat menyebabkan gejala ringan termasuk pilek sakit tenggorokan, batuk, dan demam. Sekitar 80% kasus dapat pulih tanpa perlu perawatan khusus. Sekitar 1 dari setiap 6 orang mungkin akan menderita sakit yang parah, seperti disertai pneumonia atau kesulitan bernafas, yang biasanya muncul secara bertahap. Walaupun angka kematian penyakit ini masih jarang, namun bagi orang yang berusia lanjut, dan orang-orang dengan kondisi medis yang sudah ada sebelumnya (seperti diabetes, tekanan darah tinggi dan penyakit jantung), mereka biasanya lebih rentan untuk gejala yang lebih parah. Orang yang mengalami demam, batuk, dan sulit bernapas harus segera mendapatkan pertolongan medis."
+    },
+    {
+        "question":"Berapa lama virus ini bertahan di permukaan benda?",
+        "answers":"Sampai saat ini belum diketahui dengan pasti berapa lama COVID-19 mampu bertahan di permukaan suatu benda, meskipun studi awal menunjukkan bahwa COVID-19 dapat bertahan hingga beberapa jam, tergantung jenis permukaan, suhu, atau kelembaban lingkungan. Namun desinfektan sederhana dapat membunuh virus tersebut sehingga tidak mungkin menginfeksi orang lagi. Dan membiasakan cuci tangan dengan air dan sabun, atau handrub berbasis alkohol, serta hindari menyentuh mata, mulut atau hidung (segitiga wajah) lebih efektif melindungi diri Anda."
+    },
+    {
+        "question":"Apakah COVID-19 seperti SARS?",
+        "answers":"SARS adalah coronavirus yang diidentifikasi pada tahun 2003 dan termasuk dalam keluarga besar virus yang sama dengan COVID-19, namun berbeda jenis virusnya. Gejalanya mirip dengan COVID-19, namun SARS lebih berat. SARS lebih mematikan tetapi tidak lebih infeksius (menular) dibanding COVID-19."
+    },
+    {
+        "question":"Bagaimana manusia bisa terinfeksi COVID-19?",
+        "answers":"Seseorang dapat terinfeksi dari penderita COVID-19. Penyakit ini dapat menyebar melalui tetesan kecil (droplet) dari hidung atau mulut pada saat batuk atau bersin. Droplet tersebut kemudian jatuh pada benda di sekitarnya. Kemudian jika ada orang lain menyentuh benda yang sudah terkontaminasi dengan droplet tersebut, lalu orang itu menyentuh mata, hidung atau mulut (segitiga wajah), maka orang itu dapat terinfeksi COVID-19. Atau bisa juga seseorang terinfeksi COVID-19 ketika tanpa sengaja menghirup droplet dari penderita. Inilah sebabnya penting untuk memakai masker dan menjaga jarak dengan orang lain. Sampai saat ini, para ahli masih terus melakukan penyelidikan untuk menentukan sumber virus, jenis paparan, dan cara penularannya. Tetap pantau sumber informasi yang akurat dan resmi mengenai perkembangan penyakit ini."
+    },
+    {
+        "question":"Siapa saja yang beresiko terinfeksi COVID-19?",
+        "answers":"Orang yang tinggal atau bepergian di daerah di mana virus COVID-19 bersirkulasi sangat mungkin berisiko terinfeksi. Mereka yang terinfeksi adalah orang-orang yang dalam 14 hari sebelum muncul gejala melakukan perjalanan dari negara terjangkit, atau yang kontak erat, seperti anggota keluarga, rekan kerja atau tenaga medis yang merawat pasien sebelum mereka tahu pasien tersebut terinfeksi COVID-19. Petugas kesehatan yang merawat pasien yang terinfeksi COVID-19 berisiko lebih tinggi dan harus konsisten melindungi diri mereka sendiri dengan prosedur pencegahan dan pengendalian infeksi yang tepat."
+    },
+    {
+        "question":"Apa yang akan terjadi jika tenaga medis profesional menyatakan saya mungkin terjangkit COVID-19?",
+        "answers":"Jika Anda diduga terjangkit COVID-19, Tim Tanggap COVID-19 akan mengambil beberapa sampel untuk diuji, misalnya lendir dari hidung, tenggorokan, atau paru-paru, dan/atau darah. Dan, anda akan diisolasi dari orang lain sampai dikonfirmasi apakah Anda negatif terinfeksi coronavirus."
+    }
+]
